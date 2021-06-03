@@ -1,0 +1,58 @@
+﻿@model SchoolMVC.Models.StudentView
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentView</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.stu_rollno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stu_rollno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stu_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stu_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stu_city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stu_city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stu_state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stu_state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stu_country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stu_country)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
